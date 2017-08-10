@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Heroe: Person {
+class Hero: Person {
 
     fileprivate static let name: String = "name"
     fileprivate static let photo: String = "photo"
@@ -27,11 +27,11 @@ class Heroe: Person {
     
     override init(_ dictionary: [String: Any]) {
         
-        self.name = dictionary[Heroe.name] as? String ?? ""
-        self.photo = dictionary[Heroe.photo] as? String ?? ""
-        self.power = dictionary[Heroe.power] as? String ?? ""
-        self.abilities = dictionary[Heroe.abilities] as? String ?? ""
-        self.groups = dictionary[Heroe.groups] as? String ?? ""
+        self.name = dictionary[Hero.name] as? String ?? ""
+        self.photo = dictionary[Hero.photo] as? String ?? ""
+        self.power = dictionary[Hero.power] as? String ?? ""
+        self.abilities = dictionary[Hero.abilities] as? String ?? ""
+        self.groups = dictionary[Hero.groups] as? String ?? ""
         super.init(dictionary)
         
     }
